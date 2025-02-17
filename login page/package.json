@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "firebase": "^11.3.1"
+  },
+  "devDependencies": {
+    "yarn": "^1.22.22"
+  }
+  
+}
