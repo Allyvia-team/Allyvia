@@ -1,0 +1,29 @@
+<html lang="en"> <!-- Language is english-->
+<head>
+  <meta charset="UTF-8"> <!-- Correction demonstration of different languages and special chars-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For different screen sizes-->
+  <title>Login Page</title> <!-- Title on screen-->
+  <link rel="stylesheet" href="LoginPage.css"> <!-- links the css page-->
+</head>
+<body>
+  <div class="login-container"> <!-- div box centers everything on the page-->
+      <div class="login-box"> <!-- smaller box inside w login form-->
+          <h2>Welcome Back</h2> <!--heading-->
+          <p class="sub-text">Please login to continue</p> <!-- For additional text paragraph-->
+          <form action="login.html" method="POST" class="login-form"> <!-- creates the form to be filled out-->
+              <div class="form-group"> 
+                  <label for="username">Username</label> <!--next is for inputs-->>
+                  <input type="text" id="username" name="username" placeholder="Enter your username" required>
+              </div>
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" placeholder="Enter your password" required>
+              </div>
+              <button type="submit" class="submit-btn">Login</button><!--submit button-->
+              <p class="error" id="error-message"></p>
+              <p class="signup-text">Don't have an account? <a href="signup.html">Sign up</a></p> <!-- Link updated to point to signup.html -->
+          </form>
+      </div>
+  </div>
+</body>
+</html>
