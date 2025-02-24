@@ -1,0 +1,232 @@
+/* 
+  LoginPage.css - Minimal Clean Branding for Allyvia
+*/
+
+/* Reset default margins */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container - Split Screen */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left Section - Branding */
+.left-section {
+    width: 50%;
+    background: #68A4F8; /* Allyvia Blue */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Logo & Brand Name Together */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Spacing between logo and text */
+}
+
+/* Logo */
+.logo {
+    width: 80px; /* Adjusted size */
+    height: auto;
+}
+
+/* Allyvia Brand Name */
+.brand-title {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Right Section - Signup Form */
+.right-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+/* Signup Box */
+.signup-box {
+    width: 400px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Form Heading */
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Name Fields Side-by-Side */
+.name-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-group .form-group {
+    width: 48%;
+}
+
+/* Form Group */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input Fields */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Input Focus */
+.form-group input:focus {
+    border-color: #2458A6;
+    box-shadow: 0 0 6px rgba(36, 88, 166, 0.4);
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #2458A6;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Submit Button Hover */
+.submit-btn:hover {
+    background: #1D4D8A;
+    transform: scale(1.03);
+}
+
+/* Already have an account */
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Login Link */
+.signup-text a {
+    color: #2458A6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Social Login Section */
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* Social Buttons */
+.social-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Facebook Button */
+.facebook-btn {
+    background: #4267B2;
+    color: white;
+}
+
+.facebook-btn:hover {
+    background: #365899;
+    transform: scale(1.03);
+}
+
+/* Twitter Button */
+.twitter-btn {
+    background: #1DA1F2;
+    color: white;
+}
+
+.twitter-btn:hover {
+    background: #0d95e8;
+    transform: scale(1.03);
+}
+/* Logo + Brand Name Styling */
+.logo-container {
+    display: flex; /* Align logo + text horizontally */
+    align-items: center; /* Keep them vertically centered */
+    gap: 15px; /* Space between logo and text */
+}
+
+/* Logo Image */
+.logo {
+    width: 100px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap');
+
+.brand-title {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: white;
+    text-transform: lowercase; /* Ensures all letters except the A remain lowercase */
+}
+
+.capital-A {
+    text-transform: uppercase; /* Forces only the A to be capitalized */
+}
+
+
