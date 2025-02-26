@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="dashboard.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="file:///Users/sarthak/Documents/GitHub/Allyvia/Main%20Dashboard/Elemants/Logo.png" alt="Allyvia Logo" class="logo-img">
+            </div>
+            <ul class="nav">
+                <li>Finance & Accounting</li>
+                <li>Employee & Payroll</li>
+                <li>Customer Relationship Management</li>
+                <li>Community Networking</li>
+                <li>Inventory</li>
+                <li>Documents</li>
+                <li>Analytics</li>
+                <li>Marketing Tools</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header>
+                <div class="header-left">
+                    <img src="file:///Users/sarthak/Documents/GitHub/Allyvia/Main%20Dashboard/Elemants/Logo.png" alt="Allyvia Logo" class="logo-img">
+                    <input type="text" placeholder="Search" class="search-bar">
+                </div>
+                <div class="header-right">
+                    <span>Insights</span>
+                    <span>Finance</span>
+                    <span>Profile</span>
+                    <img src="file:///Users/sarthak/Documents/GitHub/Allyvia/Main%20Dashboard/Elemants/User%20Profile%20Circle.png" alt="Profile" class="profile-pic">
+                </div>
+            </header>
+
+            <!-- Dashboard Overview -->
+            <div class="overview">
+                <h2>Overview</h2>
+                <div class="stats">
+                    <div class="stat-card" id="revenue-stats">
+                        <h3>Revenue Stats</h3>
+                        <p></p>
+                        <span></span>
+                    </div>
+                    <div class="stat-card" id="expense-chart">
+                        <h3>Expense Chart</h3>
+                        <p></p>
+                        <span></span>
+                    </div>
+                    <div class="stat-card" id="invoices-due">
+                        <h3>Invoices Due</h3>
+                        <p></p>
+                        <span></span>
+                    </div>
+                    <div class="stat-card" id="sales">
+                        <h3>Sales</h3>
+                        <p></p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="charts">
+                    <canvas id="revenueChart"></canvas>
+                    <canvas id="expenseChart"></canvas>
+                    <canvas id="salesChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Analytics Section -->
+            <div class="analytics">
+                <div class="analytics-header">
+                    <h3>Analytics</h3>
+                    <input type="text" placeholder="Search for metric">
+                    <button>Sort</button>
+                </div>
+                <div class="analytics-body">
+                    <div class="chart">
+                        <h4>Earning Report</h4>
+                        <p id="earning-report">$508.6</p>
+                        <canvas id="earningReportChart"></canvas>
+                    </div>
+                    <div class="chart">
+                        <h4>Sales</h4>
+                        <p id="sales-report">540</p>
+                        <canvas id="salesReportChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
